@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Cummings | Electrical & Computer Engineering</title>
+    <style>
+        /* CSS Styles - Keep it clean and engineering-focused */
+        :root {
+            --primary-color: #0f172a; /* Dark Navy (Engineering vibe) */
+            --secondary-color: #334155; /* Slate Grey */
+            --accent-color: #0ea5e9; /* Light Blue */
+            --text-light: #f8fafc;
+            --text-dark: #333;
+            --bg-light: #f1f5f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        
+        nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+        nav a { color: var(--text-light); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--accent-color); }
+
+        /* Layout */
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        section { margin-bottom: 60px; padding-top: 40px; border-bottom: 1px solid #e2e8f0; padding-bottom: 40px; }
+        section:last-child { border-bottom: none; }
+
+        h1, h2, h3 { color: var(--primary-color); margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+            background-color: var(--bg-light);
+            margin-top: -20px; /* Overlap header slightly */
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; color: var(--secondary-color); }
+
+        /* Project Cards */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .project-card { background: white; border: 1px solid #cbd5e1; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .project-card h3 { font-size: 1.1rem; margin-bottom: 5px; }
+        .tags span { background: var(--bg-light); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; color: var(--secondary-color); }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px 0; background: var(--primary-color); color: #94a3b8; font-size: 0.9rem; }
+        footer a { color: var(--text-light); text-decoration: none; }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            nav ul { flex-direction: column; gap: 10px; text-align: center; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Matthew Cummings</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero container">
+        <h1>Hello, I'm Matthew.</h1>
+        <p>ECE & Math Graduate | Engineer Intern | System Analyst</p>
+        <p style="margin-top: 20px; font-size: 1rem;">Specializing in Power Systems, Control Theory, and Embedded Systems.</p>
+    </div>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a recent graduate with dual degrees in <strong>Electrical & Computer Engineering</strong> and <strong>Mathematics</strong>. I bridge the gap between theoretical mathematics and practical hardware implementation.</p>
+            <p><strong>Certifications:</strong> Licensed Professional Engineer Intern (PEI).</p>
+            <p>I am seeking opportunities in power grid optimization, industrial automation, or signal processing. I enjoy solving complex problems where math meets physical systems.</p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div style="display: flex; gap: 30px;">
+                <div style="flex: 1;">
+                    <h3>B.S. Electrical & Computer Engineering</h3>
+                    <p><strong>[University Name]</strong></p>
+                    <p>Graduated: [Year]</p>
+                </div>
+                <div style="flex: 1;">
+                    <h3>B.S. Mathematics</h3>
+                    <p><strong>[University Name]</strong></p>
+                    <p>Graduated: [Year]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <p style="font-style: italic; color: var(--secondary-color);">Highlights of academic and internship work.</p>
+            
+            <div class="project-grid">
+                <!-- Project 1 Placeholder -->
+                <div class="project-card">
+                    <h3>Power System Load Analysis</h3>
+                    <p>Analyzed voltage regulation in a simplified distribution grid using MATLAB/Simulink models.</p>
+                    <div class="tags">
+                        <span>MATLAB</span><span>Python</span><span>Signals</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 Placeholder -->
+                <div class="project-card">
+                    <h3>Industrial PID Controller</h3>
+                    <p>Designed a feedback control loop for maintaining temperature stability in a simulated furnace.</p>
+                    <div class="tags">
+                        <span>C++</span><span>Embedded</span><span>Control</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 Placeholder -->
+                <div class="project-card">
+                    <h3>Data Analytics Dashboard</h3>
+                    <p>Built a visualization tool using Streamlit to monitor sensor data from industrial IoT devices.</p>
+                    <div class="tags">
+                        <span>Streamlit</span><span>Pandas</span><span>Web</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="margin-top: 20px;"><a href="#" style="color: var(--accent-color);">View my GitHub for more technical repositories &rarr;</a></p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>I am currently looking for full-time engineering roles. Feel free to reach out.</p>
+            
+            <div style="background: var(--bg-light); padding: 15px; border-radius: 8px;">
+                <strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@matthewbcummings.com</a><br>
+                <!-- Note: You will need to add MX records later for this mailto link to work specifically -->
+            </div>
+
+            <p style="margin-top: 20px;"><strong>LinkedIn:</strong> [Link in profile]</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Matthew Cummings. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
